@@ -37,7 +37,7 @@ export const homepageContent = {
 
   feedTitle: "Questions the community is answering",
   feedIntro:
-    "Real questions, in people's own words — answered by verified experts, with the most useful answer on top.",
+    "Real questions, in people's own words - answered by verified experts, with the most useful answer on top.",
 
   spacesEyebrow: "Topic spaces",
   spacesTitle: "Follow the spaces you care about",
@@ -396,6 +396,69 @@ export const questions: SeedQuestion[] = [
           ],
           [
             "What changes the picture most is lifestyle. Type 2 diabetes risk responds strongly to body composition, diet, activity, and sleep, and large studies show lifestyle change can roughly halve risk even in genetically susceptible people. Practical order: get baseline labs including HbA1c, and if you are South Asian get them earlier than the general guidance, because diabetes tends to present earlier and at lower BMI in our population. Then re-test periodically to see where you actually trend. The score tells you which dial to watch, the labs tell you whether it is moving.",
+          ],
+        ],
+      },
+    ],
+  },
+  {
+    slug: "grey-hair-genetic-or-stress",
+    title:
+      "Is grey hair genetic, or is it stress? Here's what actually decides when you go grey",
+    spaceSlug: "traits-lifestyle",
+    followers: "4.8k",
+    order: 0,
+    topAnswerLine:
+      "Mostly your DNA, with stress playing a smaller and slower role than the internet wants you to believe.",
+    answers: [
+      {
+        expertSlug: "manas-k",
+        upvotes: 503,
+        body: [
+          [
+            "The age at which you go grey is one of the most strongly inherited visible traits there is. If your father greyed early, your odds of greying early are high, and that pattern usually tracks a single well-studied gene called IRF4, which helps regulate how melanin is produced and stored in your hair follicles. A common variant in this gene is the single biggest genetic predictor of premature greying identified so far. It is the closest thing science has to a 'grey early' signal, and it travels through families exactly the way you are describing.",
+          ],
+          [
+            "Here is what is actually happening at the root. Each hair follicle has a small reserve of pigment-producing cells called melanocytes. Every time a hair sheds and regrows, that reserve is drawn down slightly. Greying begins when a follicle's melanocyte stem cells run out or stop working, so the new hair grows in without colour. Your genes largely set how fast that reserve depletes, which is why greying runs so visibly through families and clusters within specific populations. When you see your own timeline mirroring your father's, that is not coincidence. That is inheritance doing precisely what it does.",
+          ],
+          [
+            { b: "So where does stress actually fit in?" },
+          ],
+          [
+            "Stress is real here, but it is a contributor, not the main author. Research in recent years has shown that intense stress can accelerate the loss of melanocyte stem cells through the body's fight-or-flight chemical signalling. The genuinely interesting part is that some of this stress-driven greying appears to partially reverse when the stress lifts, which tells us that stress nudges the timeline rather than rewriting the underlying gene. Think of it this way: your genes set the broad schedule of appointments, and stress can pull a few of them earlier. It cannot, on its own, turn a 'grey at 50' genetic profile into 'grey at 28.'",
+          ],
+          [
+            "This is why the popular story that a stressful job 'turned someone grey overnight' is misleading. Nobody greys overnight. What people are usually seeing is a genetic timeline that was already underway, made slightly more visible by a hard stretch of life.",
+          ],
+          [
+            { b: "What about everything else people blame?" },
+          ],
+          [
+            "A handful of other factors genuinely matter, and several are especially relevant in the Indian context. Vitamin B12 deficiency, which is widespread among Indian vegetarians, is linked to premature greying and is worth checking with a simple, inexpensive blood test. Low ferritin, meaning low iron stores, also common here, shows associations with early greying. Vitamin D deficiency, near-universal in urban India, has been linked to premature greying in several studies. Smoking is consistently associated with greying before the age of 30. Thyroid imbalances can affect pigment timing and are easy to test for.",
+          ],
+          [
+            "None of these override your genetics, but they can push you toward the earlier edge of the range your DNA already permits. The practical value is that some of them are correctable, while your genetic timeline is not.",
+          ],
+          [
+            { b: "Can you reverse it or slow it down?" },
+          ],
+          [
+            "Greying caused by genetic melanocyte depletion is not currently reversible. What you can do is rule out the reversible contributors. If your B12, iron, vitamin D, and thyroid are all in range, then what you are seeing is very likely your inherited timeline, and no shampoo, oil, or supplement marketed for 'reversing grey' will change it. Treating a deficiency you genuinely have is useful for your overall health. Treating a deficiency you do not have is simply expensive urine. Be especially wary of products promising to restore pigment, because there is no over-the-counter product shown to regrow colour in a genetically depleted follicle.",
+          ],
+          [
+            "So, to your specific worry: a father grey at 35 and you greying at 29 points strongly to genetics. Get the four blood markers above checked once. If they come back clean, this is simply your code expressing itself, and it says nothing bad about your health or your ageing.",
+          ],
+        ],
+      },
+      {
+        expertSlug: "priya-iyer",
+        upvotes: 187,
+        body: [
+          [
+            "One thing I add for younger people who ask this, because it comes up constantly in my practice: early greying on its own is not a warning sign of illness. People sometimes spiral, convinced that going grey at 28 means they are 'ageing fast' on the inside. It does not work that way. Hair-pigment timing and biological ageing are largely separate processes, governed by different mechanisms. If your only symptom is grey hair, and your bloodwork is normal, this is cosmetic, not medical.",
+          ],
+          [
+            "I would also gently push back on the urge to start a pile of supplements 'just in case.' Test first. If your levels are normal, supplements will not delay your greying, and high-dose self-supplementation without a deficiency can occasionally do more harm than good. The smart move is to test, correct only what is genuinely low, and then make peace with the timeline your genes wrote.",
           ],
         ],
       },

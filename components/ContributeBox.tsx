@@ -40,7 +40,7 @@ export default function ContributeBox({
       setName("");
       setCredential("");
       setMsg(
-        "Thanks — your answer is in the review queue. We verify credentials before any title appears beside a name.",
+        "Thanks - your answer is in the review queue. We verify credentials before any title appears beside a name.",
       );
     } catch {
       setState("error");
@@ -66,7 +66,7 @@ export default function ContributeBox({
           className="composer__textarea"
           value={text}
           onChange={(e) => setText(e.target.value)}
-          placeholder="Write your answer — lead with the single sentence that answers it…"
+          placeholder="Write your answer - lead with the single sentence that answers it…"
           aria-label="Your answer"
           rows={5}
           maxLength={4000}

@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { getWriteClient } from "../../../sanity/write-client";
 
 // Receives a composer submission (Ask a question / Add your answer) and stores
-// it in Sanity as a `submission` doc with status "new" — a moderation queue.
+// it in Sanity as a `submission` doc with status "new" - a moderation queue.
 // Nothing reaches the live feed without an editor publishing it. Uses the
 // server-only write client, so no token is ever exposed to the browser.
 export const runtime = "nodejs";

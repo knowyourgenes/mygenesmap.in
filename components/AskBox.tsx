@@ -26,7 +26,7 @@ export default function AskBox() {
       setText("");
       setName("");
       setMsg(
-        "Thanks — your question is in the review queue. The most useful ones get answered and surfaced.",
+        "Thanks - your question is in the review queue. The most useful ones get answered and surfaced.",
       );
     } catch {
       setState("error");
@@ -43,7 +43,7 @@ export default function AskBox() {
         <div>
           <div className="composer__title">Ask the community</div>
           <div className="composer__sub">
-            In plain words — researchers, clinicians and genetic counsellors
+            In plain words - researchers, clinicians and genetic counsellors
             take a look.
           </div>
         </div>

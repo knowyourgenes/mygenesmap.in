@@ -8,7 +8,7 @@ const base = {
   strokeLinejoin: "round" as const,
 };
 
-// Gene-map "constellation" mark — a small network of connected nodes.
+// Gene-map "constellation" mark - a small network of connected nodes.
 export function LogoMark({ size = 22 }: { size?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 32 32" fill="none" aria-hidden>
