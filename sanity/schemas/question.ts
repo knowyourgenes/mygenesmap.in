@@ -77,6 +77,12 @@ export const question = defineType({
       description: "First answer is treated as the Top answer.",
     }),
     defineField({ name: "order", type: "number", initialValue: 0 }),
+    defineField({
+      name: "publishedAt",
+      title: "Published at",
+      type: "datetime",
+      initialValue: () => new Date().toISOString(),
+    }),
   ],
   orderings: [
     {

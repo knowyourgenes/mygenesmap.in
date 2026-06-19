@@ -35,6 +35,12 @@ export const space = defineType({
     }),
     defineField({ name: "iconKey", type: "string" }),
     defineField({ name: "order", type: "number", initialValue: 0 }),
+    defineField({
+      name: "publishedAt",
+      title: "Published at",
+      type: "datetime",
+      initialValue: () => new Date().toISOString(),
+    }),
   ],
   orderings: [
     {
