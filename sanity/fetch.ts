@@ -5,8 +5,10 @@ import {
   spacesQuery,
   feedQuery,
   questionSlugsQuery,
+  questionSitemapQuery,
   questionBySlugQuery,
   spaceSlugsQuery,
+  spaceSitemapQuery,
   spaceBySlugQuery,
   trendingQuery,
 } from "./queries";
@@ -124,6 +126,13 @@ export type Trending = {
   relatedSlug?: string;
 };
 
+// Used by the sitemap. `publishedAt` is always a real date thanks to
+// `coalesce(publishedAt, _updatedAt)` in the query.
+export type SitemapEntry = {
+  slug: string;
+  publishedAt: string;
+};
+
 export type HomeData = {
   content: HomepageContent;
   spaces: Space[];
@@ -195,6 +204,18 @@ export async function getSpaceSlugs(): Promise<string[]> {
   const client = getClient();
   if (!isSanityConfigured || !client) return [];
   return (await client.fetch<string[]>(spaceSlugsQuery)) ?? [];
+}
+
+export async function getQuestionSitemapEntries(): Promise<SitemapEntry[]> {
+  const client = getClient();
+  if (!isSanityConfigured || !client) return [];
+  return (await client.fetch<SitemapEntry[]>(questionSitemapQuery)) ?? [];
+}
+
+export async function getSpaceSitemapEntries(): Promise<SitemapEntry[]> {
+  const client = getClient();
+  if (!isSanityConfigured || !client) return [];
+  return (await client.fetch<SitemapEntry[]>(spaceSitemapQuery)) ?? [];
 }
 
 export async function getSpaceBySlug(

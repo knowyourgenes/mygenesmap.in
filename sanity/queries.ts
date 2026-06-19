@@ -46,6 +46,12 @@ export const feedQuery = groq`*[_type == "question"] | order(order asc) ${feedCa
 
 export const questionSlugsQuery = groq`*[_type == "question" && defined(slug.current)][].slug.current`;
 
+// Sitemap projection: slug + a guaranteed-real date for lastModified.
+export const questionSitemapQuery = groq`*[_type == "question" && defined(slug.current)]{
+  "slug": slug.current,
+  "publishedAt": coalesce(publishedAt, _updatedAt)
+}`;
+
 export const questionBySlugQuery = groq`*[_type == "question" && slug.current == $slug][0] {
   "slug": slug.current,
   title,
@@ -64,6 +70,12 @@ export const questionBySlugQuery = groq`*[_type == "question" && slug.current ==
 }`;
 
 export const spaceSlugsQuery = groq`*[_type == "space" && defined(slug.current)][].slug.current`;
+
+// Sitemap projection: slug + a guaranteed-real date for lastModified.
+export const spaceSitemapQuery = groq`*[_type == "space" && defined(slug.current)]{
+  "slug": slug.current,
+  "publishedAt": coalesce(publishedAt, _updatedAt)
+}`;
 
 export const spaceBySlugQuery = groq`*[_type == "space" && slug.current == $slug][0] {
   "slug": slug.current,
